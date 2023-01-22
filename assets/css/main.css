@@ -1008,7 +1008,7 @@ ul.icons {
 
 ul.icons li {
     display: inline-block;
-    padding: 0 0.75em 0 0;
+    padding: 0 0.75rem 0 0;
 }
 
 ul.icons li:last-child {
@@ -1023,10 +1023,12 @@ ul.icons li a {
     line-height: 3rem;
     text-align: center;
     width: 3rem;
-    font-size: 20px;
+    font-size: 1.5rem;
+    background-image: radial-gradient(ellipse at center, rgb(30, 30, 30, 0.75) 0, rgb(0, 0, 0, 0) 75%);
 }
 
 ul.icons li a:hover {
+    background-image: radial-gradient(ellipse at center, rgb(255, 255, 255, 0.175) 0, rgb(255, 255, 255, 0.075) 75%);
     background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -1250,14 +1252,14 @@ button {
     -webkit-transition-delay: 0.75s;
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
-    background-image: radial-gradient(ellipse at center, rgb(0, 0, 0, 1) 0, rgb(0, 0, 0, 0) 75%), url("../../images/overlay.png");
+    background-image: radial-gradient(ellipse at center, rgb(30, 30, 30, 0.75) 0, rgb(0, 0, 0, 0) 50%);
     background-size: auto, 512px 512px;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    -moz-filter: blur(0.1rem);
-    -webkit-filter: blur(0.1rem);
-    -ms-filter: blur(0.1rem);
-    filter: blur(0.1rem);
+    -moz-filter: blur(0.1rem) brightness(70%);
+    -webkit-filter: blur(0.1rem) brightness(70%);
+    -ms-filter: blur(0.1rem) brightness(70%);
+    filter: blur(0.1rem) brightness(70%);
     z-index: 2;
 }
 
@@ -1274,10 +1276,10 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -moz-filter: blur(0.1rem);
-    -webkit-filter: blur(0.1rem);
-    -ms-filter: blur(0.1rem);
-    filter: blur(0.1rem);
+    -moz-filter: blur(0.1rem) brightness(70%);
+    -webkit-filter: blur(0.1rem) brightness(70%);
+    -ms-filter: blur(0.1rem) brightness(70%);
+    filter: blur(0.1rem) brightness(70%);
     z-index: 1;
 }
 
@@ -1462,6 +1464,7 @@ body.is-preload #bg:before {
 #header nav ul li {
     padding-left: 0;
     border-left: solid 1px #ffffff;
+    border-bottom: 0;
 }
 
 #header nav ul li:first-child {
@@ -1471,21 +1474,31 @@ body.is-preload #bg:before {
 #header nav ul li a {
     display: block;
     min-width: 7.5rem;
-    height: 2.75rem;
+    height: fit-content;
     line-height: 2.75rem;
     padding: 0 1.25rem 0 1.45rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     border-bottom: 0;
+    background-image: radial-gradient(ellipse at center, rgb(30, 30, 30, 0.75) 0, rgb(0, 0, 0, 0) 75%);
 }
 
 #header nav ul li a:hover {
+    background-image: radial-gradient(ellipse at center, rgb(255, 255, 255, 0.175) 0, rgb(255, 255, 255, 0.075) 75%);
     background-color: rgba(255, 255, 255, 0.075);
 }
 
 #header nav ul li a:active {
     background-color: rgba(255, 255, 255, 0.175);
+}
+
+#header nav ul li a img {
+    width: auto;
+    height: 100px;
+    text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 0.25rem;
 }
 
 #header nav.use-middle:after {
