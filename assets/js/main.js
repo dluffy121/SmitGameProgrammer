@@ -15,19 +15,29 @@
 		$main_articles = $main.children('article');
 
 	// Breakpoints.
-	breakpoints({
-		xlarge: ['1281px', '1680px'],
-		large: ['981px', '1280px'],
-		medium: ['737px', '980px'],
-		small: ['481px', '736px'],
-		xsmall: ['361px', '480px'],
-		xxsmall: [null, '360px']
-	});
+	// breakpoints({
+	// 	xlarge: ['1281px', '1680px'],
+	// 	large: ['981px', '1280px'],
+	// 	medium: ['737px', '980px'],
+	// 	small: ['481px', '736px'],
+	// 	xsmall: ['361px', '480px'],
+	// 	xxsmall: [null, '360px']
+	// });
 
 	// Play initial animations on page load.
 	$window.on('load', function () {
+		// window.setTimeout(function () {
+		// 	$body.removeClass('is-preload');
+		// }, 100);
+
 		window.setTimeout(function () {
-			$body.removeClass('is-preload');
+			var f = document.createElement('iframe');
+			f.src = "https://onedrive.live.com/embed?cid=608F770395ED655A&resid=608F770395ED655A%2110053&authkey=AFNpJwLz0cdkYhk&em=2";
+			f.width = '100%';
+			f.height = '1000em';
+			f.scrolling = false;
+			f.frameBorder = '0';
+			document.getElementById('resume').append(f);
 		}, 100);
 	});
 
@@ -66,7 +76,7 @@
 	}
 
 	// Main.
-	var delay = 0,
+	var delay = 100,
 		locked = false;
 
 	// Methods.
