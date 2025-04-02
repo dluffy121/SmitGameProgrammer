@@ -32,11 +32,14 @@
 
 		window.setTimeout(function () {
 			var f = document.createElement('iframe');
-			f.src = "https://onedrive.live.com/embed?cid=608F770395ED655A&resid=608F770395ED655A%2110053&authkey=AFNpJwLz0cdkYhk&em=2";
+			f.src = "https://drive.google.com/file/d/1_IDL4qo7p_oFyTCBXyiula6sjoFxv5iT/preview";
 			f.width = '100%';
-			f.height = '1000em';
-			f.scrolling = false;
-			f.frameBorder = '0';
+			f.height = '950em';
+			f.sandbox = "allow-scripts allow-same-origin"
+			f.style.overflow = "hidden";
+			f.style.border = '1px solid cyan';
+			f.style.animation = 'glow 1s infinite alternate';
+			f.style.borderRadius = '5px';
 			document.getElementById('resume').append(f);
 		}, 100);
 	});

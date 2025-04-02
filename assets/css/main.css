@@ -1481,7 +1481,7 @@ body.is-preload #bg:before {
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     border-bottom: 0;
-    background-image: radial-gradient(ellipse at center, rgb(30, 30, 30, 0.75) 0, rgb(0, 0, 0, 0) 75%);
+    background-image: radial-gradient(ellipse at center, rgb(20, 20, 20) 0, rgba(100, 100, 100, 0.1) 100%);
 }
 
 #header nav ul li a:hover {
@@ -1775,4 +1775,16 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
     opacity: 0;
+}
+
+@keyframes glow {
+    from {
+        border-color: cyan;
+        box-shadow: 0 0 5px cyan;
+    }
+
+    to {
+        border-color: aqua;
+        box-shadow: 0 0 15px cyan;
+    }
 }
