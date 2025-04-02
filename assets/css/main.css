@@ -1784,7 +1784,7 @@ body.is-preload #footer {
     }
 
     to {
-        border-color: aqua;
-        box-shadow: 0 0 15px cyan;
+        border-color: rgba(0, 255, 255, 0);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0);
     }
 }
