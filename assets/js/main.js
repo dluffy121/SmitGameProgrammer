@@ -32,15 +32,18 @@
 
 		window.setTimeout(function () {
 			var f = document.createElement('iframe');
-			f.src = "https://drive.google.com/file/d/1_IDL4qo7p_oFyTCBXyiula6sjoFxv5iT/preview";
+			f.loading = "lazy";
+			f.src = "https://www.canva.com/design/DAFRMkLiCk8/lP5rEDitFqwJXkpCDjbpFA/view?embed";
 			f.width = '100%';
 			f.height = '950em';
-			f.sandbox = "allow-scripts allow-same-origin"
-			f.style.overflow = "hidden";
-			f.style.border = '1px solid cyan';
-			f.style.animation = 'glow 1s infinite alternate';
-			f.style.borderRadius = '5px';
-			document.getElementById('resume').append(f);
+			f.sandbox = "allow-scripts allow-popups"
+			f.style = "position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+			f.style.border = '2px solid cyan';
+			f.style.animation = 'glow 3s infinite alternate';
+			f.style.borderRadius = '10px';
+			f.allowfullscreen = "allowfullscreen";
+			f.allow = "fullscreen";
+			document.getElementById('resumeDiv').append(f);
 		}, 100);
 	});
 
