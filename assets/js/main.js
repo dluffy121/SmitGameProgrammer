@@ -33,7 +33,7 @@
 		window.setTimeout(function () {
 			var f = document.createElement('iframe');
 			f.loading = "lazy";
-			f.src = "https://drive.google.com/file/d/1GZwgJgG8e7Qg3uPlb1PzRv0bAvucK82d/preview?autoplay=1";
+			f.src = "https://drive.google.com/file/d/1EIS1oB9KuAoaKrkdtQ5JTGoPYxwADWPq/preview?autoplay=1";
 			f.width = '100%';
 			f.height = '950em';
 			f.sandbox = "allow-scripts allow-popups"
